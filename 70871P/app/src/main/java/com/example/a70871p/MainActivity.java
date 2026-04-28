@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         btnAddAdvert.setOnClickListener(v ->{
             Intent intent = new Intent(MainActivity.this, AddItemActivity.class);
-            startActivities(intent);
+            startActivity(intent);
         });
 
         btnShowItems.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ItemListActivity.class);
-            startActivities(intent);
+            startActivity(intent);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
