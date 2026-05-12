@@ -15,6 +15,7 @@
         <activity android:name=".ItemDetailActivity" />
         <activity android:name=".ItemListActivity" />
         <activity android:name=".AddItemActivity" />
+        <activity android:name=".MapActivity" />
 
         <activity
             android:name=".MainActivity"

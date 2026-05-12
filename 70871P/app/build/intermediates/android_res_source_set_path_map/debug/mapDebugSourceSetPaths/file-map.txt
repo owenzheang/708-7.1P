@@ -1,0 +1,7 @@
+com.example.a70871p.app-pngs-0 E:\androidsdkandsave\708-7.1P\70871P\app\build\generated\res\pngs\debug
+com.example.a70871p.app-updated_navigation_xml-1 E:\androidsdkandsave\708-7.1P\70871P\app\build\generated\updated_navigation_xml\debug
+com.example.a70871p.app-packageDebugResources-2 E:\androidsdkandsave\708-7.1P\70871P\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.a70871p.app-packageDebugResources-3 E:\androidsdkandsave\708-7.1P\70871P\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.a70871p.app-debug-4 E:\androidsdkandsave\708-7.1P\70871P\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.a70871p.app-debug-5 E:\androidsdkandsave\708-7.1P\70871P\app\src\debug\res
+com.example.a70871p.app-main-6 E:\androidsdkandsave\708-7.1P\70871P\app\src\main\res
