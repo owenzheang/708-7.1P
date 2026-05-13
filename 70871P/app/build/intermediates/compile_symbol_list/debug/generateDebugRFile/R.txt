@@ -7,6 +7,7 @@ int id btnChooseImage 0x0
 int id btnDelete 0x0
 int id btnSave 0x0
 int id btnShowItems 0x0
+int id btnShowMap 0x0
 int id detailCategory 0x0
 int id detailDateTime 0x0
 int id detailDescription 0x0
@@ -22,6 +23,7 @@ int id editPhone 0x0
 int id imagePreview 0x0
 int id listViewItems 0x0
 int id main 0x0
+int id map 0x0
 int id radioFound 0x0
 int id radioGroupType 0x0
 int id radioLost 0x0
@@ -34,6 +36,7 @@ int layout activity_add_item 0x0
 int layout activity_item_detail 0x0
 int layout activity_item_list 0x0
 int layout activity_main 0x0
+int layout activity_map 0x0
 int layout item_lost_found 0x0
 int mipmap ic_launcher 0x0
 int mipmap ic_launcher_round 0x0

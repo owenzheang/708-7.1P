@@ -37,4 +37,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddAdvert" />
 
+    <Button
+        android:id="@+id/btnShowMap"
+        android:layout_width="288dp"
+        android:layout_height="65dp"
+        android:text="Show on Map"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowItems"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

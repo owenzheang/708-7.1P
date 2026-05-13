@@ -9,6 +9,7 @@ id btnChooseImage
 id btnDelete
 id btnSave
 id btnShowItems
+id btnShowMap
 id detailCategory
 id detailDateTime
 id detailDescription
@@ -24,6 +25,7 @@ id editPhone
 id imagePreview
 id listViewItems
 id main
+id map
 id radioFound
 id radioGroupType
 id radioLost
@@ -36,6 +38,7 @@ layout activity_add_item
 layout activity_item_detail
 layout activity_item_list
 layout activity_main
+layout activity_map
 layout item_lost_found
 mipmap ic_launcher
 mipmap ic_launcher_round

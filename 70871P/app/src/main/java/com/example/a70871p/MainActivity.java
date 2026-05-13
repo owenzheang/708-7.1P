@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnAddAdvert = findViewById(R.id.btnAddAdvert);
         btnShowItems = findViewById(R.id.btnShowItems);
+        btnShowMap = findViewById(R.id.btnShowMap);
 
         btnAddAdvert.setOnClickListener(v ->{
             Intent intent = new Intent(MainActivity.this, AddItemActivity.class);
