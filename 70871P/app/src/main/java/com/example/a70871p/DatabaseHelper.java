@@ -11,7 +11,7 @@ import android.database.Cursor;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "lost_found.db";
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
 
     public static final String TABLE_NAME = "items";
 
@@ -24,6 +24,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_CATEGORY = "category";
     public static final String COL_IMAGE = "image";
     public static final String COL_DATE_TIME = "date_time";
+    public static final String COL_LATITUDE = "latitude";
+    public static final String COL_LONGITUDE = "longitude";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -40,7 +42,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL_LOCATION + " TEXT, " +
                 COL_CATEGORY + " TEXT, " +
                 COL_IMAGE + " TEXT, " +
-                COL_DATE_TIME + " TEXT)";
+                COL_DATE_TIME + " TEXT,"+
+                COL_LATITUDE + " REAL, " +
+                COL_LONGITUDE + " REAL)";
+
         db.execSQL(createTable);
     }
 
@@ -51,7 +56,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public boolean insertItem(String type, String name, String phone, String description,
-                              String location, String category, String image, String dateTime) {
+                              String location, String category, String image, String dateTime, double latitude, double longitude) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -64,6 +69,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(COL_CATEGORY, category);
         values.put(COL_IMAGE, image);
         values.put(COL_DATE_TIME, dateTime);
+        values.put(COL_LATITUDE, latitude);
+        values.put(COL_LONGITUDE, longitude);
 
         long result = db.insert(TABLE_NAME, null, values);
 
@@ -89,7 +96,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         cursor.getString(5),
                         cursor.getString(6),
                         cursor.getString(7),
-                        cursor.getString(8)
+                        cursor.getString(8),
+                        cursor.getDouble(9),
+                        cursor.getDouble(10)
                 );
 
                 itemList.add(item);
@@ -124,7 +133,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     cursor.getString(5),
                     cursor.getString(6),
                     cursor.getString(7),
-                    cursor.getString(8)
+                    cursor.getString(8),
+                    cursor.getDouble(9),
+                    cursor.getDouble(10)
             );
         }
 

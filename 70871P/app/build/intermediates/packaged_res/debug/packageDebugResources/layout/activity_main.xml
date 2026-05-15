@@ -10,12 +10,12 @@
 
     <Button
         android:id="@+id/btnAddAdvert"
-        android:layout_width="288dp"
-        android:layout_height="65dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="61dp"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="82dp"
         android:text="Create a New Advert"
         app:layout_constraintBottom_toTopOf="@+id/btnShowItems"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,27 +24,28 @@
 
     <Button
         android:id="@+id/btnShowItems"
-        android:layout_width="288dp"
-        android:layout_height="65dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="61dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="247dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="84dp"
         android:text="Show All Lost and Found Items"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowMap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddAdvert" />
 
     <Button
         android:id="@+id/btnShowMap"
-        android:layout_width="288dp"
-        android:layout_height="65dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="137dp"
         android:text="Show on Map"
-        app:layout_constraintTop_toBottomOf="@+id/btnShowItems"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowItems" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

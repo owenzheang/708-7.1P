@@ -4,6 +4,7 @@ int drawable ic_launcher_background 0x0
 int drawable ic_launcher_foreground 0x0
 int id btnAddAdvert 0x0
 int id btnChooseImage 0x0
+int id btnCurrentLocation 0x0
 int id btnDelete 0x0
 int id btnSave 0x0
 int id btnShowItems 0x0

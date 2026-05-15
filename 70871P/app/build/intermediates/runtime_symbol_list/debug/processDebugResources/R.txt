@@ -3824,6 +3824,7 @@ int id bounceEnd 0x7f080069
 int id bounceStart 0x7f08006a
 int id btnAddAdvert 0x7f08006b
 int id btnChooseImage 0x7f08006c
+int id btnCurrentLocation 0x7f080232
 int id btnDelete 0x7f08006d
 int id btnSave 0x7f08006e
 int id btnShowItems 0x7f08006f

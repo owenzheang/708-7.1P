@@ -11,9 +11,11 @@ public class Item {
     String category;
     String image;
     String dateTime;
+    double latitude;
+    double longitude;
 
     public Item(int id, String type, String name, String phone, String description,
-                String location, String category, String image, String dateTime) {
+                String location, String category, String image, String dateTime, double latitude, double longitude) {
         this.id = id;
         this.type = type;
         this.name = name;
@@ -23,5 +25,7 @@ public class Item {
         this.category = category;
         this.image = image;
         this.dateTime = dateTime;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 }
